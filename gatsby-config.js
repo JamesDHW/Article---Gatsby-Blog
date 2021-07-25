@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://jamesdhw.github.io/blog/",
     title: "blog",
   },
   plugins: ["gatsby-plugin-styled-components"],
