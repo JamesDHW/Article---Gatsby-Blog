@@ -1,0 +1,2 @@
+(self.webpackChunkblog=self.webpackChunkblog||[]).push([[678],{704:function(e,l,t){"use strict";t.r(l);var n=t(294),a={color:"#232129",padding:96,fontFamily:"-apple-system, Roboto, sans-serif, serif"};l.default=function(){return n.createElement("main",{style:a},n.createElement("title",null,"James' Blog"),n.createElement("h1",null,"James' Blog!"))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-bd0eb742e85a0dac2599.js.map
