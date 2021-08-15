@@ -1,4 +1,11 @@
-# Build your own blog with Gatsby and GitHub Pages for free
+---
+title: "Build your own blog with Gatsby and GitHub Pages for free"
+slug: 2021/08/building-your-own-blog-with-gatsby-and-github-pages
+thumbnail: "./thumbnail.png"
+thumbnail_alt: "Gatsby blog for GitHub Pages"
+author: "James Haworth Wheatman"
+date: 2021-08-01
+---
 
 <br>
 
@@ -10,11 +17,9 @@
 
 **Git commits:** *[initial commit](https://github.com/JamesDHW/blog/commit/6f0d6086de8f93626f3060943ba2c4b802913de5)> [configure gatsby plugins](https://github.com/JamesDHW/blog/commit/9328fb70334b557bb4b64988aa3a226e1f590eba) > [create components](https://github.com/JamesDHW/blog/commit/af6933b8537615e3397de23fdd463e02932c6f7f)  > [homepage query](https://github.com/JamesDHW/blog/commit/368a335c05a58d3e85c06e0e8839d72924e3bbeb) > [generate pages dynamically](https://github.com/JamesDHW/blog/commit/47a9c95b84cd9a42a6af7f8733050449a4b7b910) > [blog post template](https://github.com/JamesDHW/blog/commit/ab1657d54ef496dc646a80e5d024058eb797f24a) > [add the deployment script](https://github.com/JamesDHW/blog/commit/92adc364fe4d15a1ea04a72eb4faba6b37e5726c).*
 
-**[Example Blog](https://jamesdhw.github.io/blog/)**
 
 
-
-## Introduction
+# Introduction
 
 Gatsby can serve static React pages, but can also *generate* static pages from React templates that you create. To add a new page to our site we will just need to write a new markdown (`.md`) file. Gatsby will then fill in the template from our content and generate the page for us - this is what makes the framework so powerful and widely-used for creating a blog. 
 
@@ -44,7 +49,7 @@ Here's what we're going to do in this article:
 6. Create a template to display the blog post pages.
 7. Deploy our project to GitHub Pages.
 
-## Step 1 - Generate a new Gatsby project
+# Step 1 - Generate a new Gatsby project
 
 To generate a new Gatsby project, run:
 
@@ -388,7 +393,7 @@ We can now go to our remote repo on GitHub and should see a new `gh-pages` branc
 
 <br>
 
-![GitHub Pages settings](/src/blog/2021/08/building-your-own-blog-with-gatsby-and-github-pages/github-pages.png)
+![GitHub Pages settings](github-pages.png)
 
 <br>
 
