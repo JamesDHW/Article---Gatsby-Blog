@@ -1,0 +1,22 @@
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+html {
+    background-color: #293742;
+    background-image: linear-gradient(to right, #293742, #182026, #293742);
+
+}
+
+h1, h2 {
+    font-size: xx-large;
+    font-family: 'Shadows Into Light';
+}
+
+p, li, ul {
+    font-size: large;
+    font-family: 'Itim', cursive;
+}
+

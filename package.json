@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.47.0",
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^3.11.1",
     "gatsby-plugin-image": "^1.11.0",
