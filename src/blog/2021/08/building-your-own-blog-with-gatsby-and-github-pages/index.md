@@ -13,9 +13,9 @@ date: 2021-08-01
 
 *If you follow this article to the end, you'll have a professional blog site deployed to the web with a homepage that shows a list of article previews and a page for each article. New pages will automatically be generated when you add new content!*
 
-**Prerequisites:** *You'll need some experience with npm and React, and a very basic understanding of the concepts behind GraphQL. You'll also need to be familair with git and GitHub.*
+**Prerequisites:** *You'll need some experience with npm and React, and a very basic understanding of the concepts behind GraphQL. You'll also need to be familiar with git and GitHub.*
 
-**Git commits:** *[initial commit](https://github.com/JamesDHW/blog/commit/6f0d6086de8f93626f3060943ba2c4b802913de5)> [configure gatsby plugins](https://github.com/JamesDHW/blog/commit/9328fb70334b557bb4b64988aa3a226e1f590eba) > [create components](https://github.com/JamesDHW/blog/commit/af6933b8537615e3397de23fdd463e02932c6f7f)  > [homepage query](https://github.com/JamesDHW/blog/commit/368a335c05a58d3e85c06e0e8839d72924e3bbeb) > [generate pages dynamically](https://github.com/JamesDHW/blog/commit/47a9c95b84cd9a42a6af7f8733050449a4b7b910) > [blog post template](https://github.com/JamesDHW/blog/commit/ab1657d54ef496dc646a80e5d024058eb797f24a) > [add the deployment script](https://github.com/JamesDHW/blog/commit/92adc364fe4d15a1ea04a72eb4faba6b37e5726c).*
+**Git commits:** *[initial commit](https://github.com/JamesDHW/blog/commit/6f0d6086de8f93626f3060943ba2c4b802913de5) > [configure Gatsby plugins](https://github.com/JamesDHW/blog/commit/9328fb70334b557bb4b64988aa3a226e1f590eba) > [add an article](https://github.com/JamesDHW/blog/commit/b0e02e83779931db52cec7f098f9bb3ce034d46f) > [create components](https://github.com/JamesDHW/blog/commit/af6933b8537615e3397de23fdd463e02932c6f7f)  > [homepage query](https://github.com/JamesDHW/blog/commit/368a335c05a58d3e85c06e0e8839d72924e3bbeb) > [generate pages dynamically](https://github.com/JamesDHW/blog/commit/47a9c95b84cd9a42a6af7f8733050449a4b7b910) > [blog post template](https://github.com/JamesDHW/blog/commit/ab1657d54ef496dc646a80e5d024058eb797f24a) > [add the deployment script](https://github.com/JamesDHW/blog/commit/92adc364fe4d15a1ea04a72eb4faba6b37e5726c).*
 
 
 
@@ -29,7 +29,7 @@ We will add metadata to our `.md` files by adding a "frontmatter", where we can 
 ```yaml
 ---
 title: "A blog article"
-any_other_property: some-value
+some_other_property: some-value
 ---
 
 ...
@@ -88,13 +88,13 @@ We're going to install some plugins to use in our project which will add some ex
 # These libraries parse our markdown into HTML (including images and code blocks).
 npm i gatsby-transformer-remark gatsby-remark-images gatsby-remark-prismjs prismjs gatsby-remark-highlight-code
 
-# This library allows you to query the data from your markdown files (e.g. the titles of articles).
+# This library allows you to query the data from your markdown files (e.g., the titles of articles).
 npm i gatsby-source-filesystem
 
 # These libraries allow us to render image components.
 npm i gatsby-plugin-image gatsby-transformer-sharp gatsby-plugin-sharp
 
-# This library will allow us add a manifest (in particular, a favicon) to our site.
+# This library will allow us to add a manifest (in particular, a favicon) to our site.
 npm i gatsby-plugin-manifest
 ```
 <br>
@@ -206,7 +206,7 @@ export const query = graphql`
 ```
 <br>
 
-If you're looking to find the schema for your Gatsby site, you can go to [http://localhost:8000/___graphql](http://localhost:8000/___graphql) to play around with the sandbox and find what the queries should look like. You can then copy and paste the correct query that you want to pass in to your component into your code.
+If you're looking to find the schema for your Gatsby site, you can go to [http://localhost:8000/___graphql](http://localhost:8000/___graphql) to play around with the sandbox and find what the queries should look like. You can then copy and paste the correct query that you want to pass into your component into your code.
 
 Let's return to `index.js` (if you've already added something there) and add a query to the page which will grab all the information we need to show our blog summaries:
 
@@ -318,7 +318,7 @@ We'll now go on to create the actual template component for our actual blog post
 
 # Step 6 - Create our blog post template
 
-This will be very simple as we'll mostly be showing some parsed HTML. Create a `src/templates/BlogPost/BlogPost.jsx` file, and create a `BlogPost` component. I've included a snippet below, but you can make this however you like.
+This will be very simple as we'll mostly be showing some parsed HTML. Create a `src/templates/BlogPost/BlogPost.jsx` file and create a `BlogPost` component. I've included a snippet below, but you can make this however you like.
 
 <br>
 
@@ -401,7 +401,7 @@ After a few minutes your site will be deployed!
 
 # Summary
 
-After following this article you should have learned:
+After following this article, you should have learned:
 
  - How to generate a new Gatsby project.
  - How to add and configure Gatsby plugins to customise your site.
@@ -409,6 +409,6 @@ After following this article you should have learned:
  - How to dynamically generate pages from a template.
  - How to deploy a Gatsby project to GitHub Pages.
 
-You can use this knowledge to add 
+You can use this knowledge to add more pages and plugins to customise the blog to however you like.
 
-If you want a quick-start to your project, you can clone [my GitHub repo](https://github.com/JamesDHW/blog) and customise the styling to your liking.
+If you want a quick-start to your project, you can clone [my GitHub repo](https://github.com/JamesDHW/blog) and customise the styling to your liking. If you don't want to clone the repo but just explore the code, go to the repo and press "`.`" when you're on the website - this will open up a VS Code window to view the code.
