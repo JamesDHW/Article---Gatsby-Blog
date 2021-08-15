@@ -10,9 +10,12 @@ import {
   Link
 } from './SiteLayout.style'
 
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
+
 const ICON_HEIGHT = 24
 
 export const SiteLayout = ({ children }) => {
+  deckDeckGoHighlightElement()
   return (
     <div className="bp3-dark">
       <StyledNavbar fixedToTop>
