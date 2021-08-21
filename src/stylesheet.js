@@ -6,7 +6,6 @@ export const getSpacing = interval => `${5 * interval}px`
 
 export const Title = styled(H1)`
   font-size: 75px !important;
-  margin: ${getSpacing(10)} 0;
   text-align: center;
 `
 export const Subtitle = styled(H2)`

@@ -14,6 +14,9 @@ export const StyledIcon = styled(Icon)`
   margin-right: ${getSpacing(2)};
 `
 export const StyledCard = styled(Card)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: ${getSpacing(10)};
 `
 export const IconContainer = styled.div`

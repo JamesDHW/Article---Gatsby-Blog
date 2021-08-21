@@ -7,7 +7,9 @@ import {
   StyledNavbar,
   StyledRightNavbarGroup,
   BlogTitle,
-  Link
+  Link,
+  Footer,
+  Header
 } from './SiteLayout.style'
 
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
@@ -18,6 +20,7 @@ export const SiteLayout = ({ children }) => {
   deckDeckGoHighlightElement()
   return (
     <div className="bp3-dark">
+      <Header />
       <StyledNavbar fixedToTop>
         <NavbarGroup align={Alignment.LEFT}>
           <Link href="https://jamesdhw.github.io">
@@ -47,6 +50,7 @@ export const SiteLayout = ({ children }) => {
       </StyledNavbar>
 
       <ContentContainer>{children}</ContentContainer>
+      <Footer />
     </div>
   )
 }
