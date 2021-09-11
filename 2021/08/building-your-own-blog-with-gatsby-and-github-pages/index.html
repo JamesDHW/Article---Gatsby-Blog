@@ -54,7 +54,7 @@ some_other_property: some-value
 <li>Create a template to display the blog post pages.</li>
 <li>Deploy our project to GitHub Pages.</li>
 </ol>
-<h1>Step 1 - Generate a new Gatsby project</h1>
+<h1>Generate a new Gatsby project</h1>
 <p>To generate a new Gatsby project, run:</p>
 <br>
 <deckgo-highlight-code language="bash" terminal="carbon" theme="material" line-numbers="true"  >
@@ -72,7 +72,7 @@ git remote add origin &lt;your-remote-repo-url-goes-here&gt;</code>
         </deckgo-highlight-code>
 <br>
 <p>Let's configure all the plugins we're going to need and then we'll write some basic components for our site.</p>
-<h1>Step 2 - Configure Gatsby plugins</h1>
+<h1>Configure Gatsby plugins</h1>
 <p>We're going to install some plugins to use in our project which will add some extra functionality to our Gatsby site:</p>
 <br>
 <deckgo-highlight-code language="bash" terminal="carbon" theme="material" line-numbers="true"  >
@@ -141,7 +141,7 @@ export const BlogPreviewCard = ({
 <p>We will pass the correct props through to the component later. The important thing to understand is that the <code class="language-text">slug</code> is the location of the markdown file you want to show and when we navigate to this address we see the blog post.</p>
 <p>To render images in your React code, you can use <code class="language-text">gatsby-plugin-image</code>.</p>
 <p>You can find the preview card I made <a href="https://github.com/JamesDHW/blog/blob/master/src/components/BlogPreviewCard/BlogPreviewCard.jsx">here</a>.</p>
-<h1>Step 3 - Write your first article</h1>
+<h1>Write your first article</h1>
 <p>Create a new file called <code class="language-text">src/blog/article-one/index.md</code> and add the metadata as below:</p>
 <br>
 <deckgo-highlight-code  terminal="carbon" theme="material" line-numbers="true"  >
@@ -158,7 +158,7 @@ date: 2021-08-01
         </deckgo-highlight-code>
 <br>
 <p>You will also need to add in a new file called <code class="language-text">src/blog/article-one/thumbnail.png</code> which will be a thumbnail image for your article.</p>
-<h1>Step 4 - Understanding Gatsby and GraphQL</h1>
+<h1>Understanding Gatsby and GraphQL</h1>
 <p>Gatsby allows you to use GraphQL to query site data, however Gatsby abstracts some of the boilerplate away for us, so we need to do our queries in a particular way. We are going to have two main queries on our site: one for our homepage, where we query all the metadata and thumbnails of our articles; and one on our blog post page to get the content of the blog post.</p>
 <p>In both of these components we need to export a <code class="language-text">graphql</code> query for the page. In the background, when generating the pages, Gatsby runs the query and injects the result into the page component (exported as <code class="language-text">default</code>). This gets passed in as the <code class="language-text">data</code> prop.</p>
 <br>
@@ -230,7 +230,7 @@ export const query = graphql`
         </deckgo-highlight-code>
 <br>
 <p>Now Gatsby is querying data from all our <code class="language-text">MarkdownRemark</code>s and passing the information through to the <code class="language-text">IndexPage</code> to show all our blog previews.</p>
-<h1>Step 5 - Generating pages from markdown files</h1>
+<h1>Generating pages from markdown files</h1>
 <p>As Gatsby serves static websites, all the pages that we want to generate dynamically get created at build-time. Gatsby will run any script held within the <code class="language-text">gatsby-node.js</code> file on build of the project - this is where we will tell Gatsby to generate our pages.</p>
 <br>
 <deckgo-highlight-code language="javascript" terminal="carbon" theme="material" line-numbers="true"  >
@@ -273,7 +273,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) =&gt; {
         </deckgo-highlight-code>
 <br>
 <p>We'll now go on to create the actual template component for our actual blog post page that we've used to create a page from.</p>
-<h1>Step 6 - Create our blog post template</h1>
+<h1>Create our blog post template</h1>
 <p>This will be very simple as we'll mostly be showing some parsed HTML. Create a <code class="language-text">src/templates/BlogPost/BlogPost.jsx</code> file and create a <code class="language-text">BlogPost</code> component. I've included a snippet below, but you can make this however you like.</p>
 <br>
 <deckgo-highlight-code language="jsx" terminal="carbon" theme="material" line-numbers="true"  >
@@ -308,7 +308,7 @@ export const query = graphql`
 <p>The important thing to understand here is that Gatsby is using the <code class="language-text">gatsby-transformer-remark</code> plugin to transform our markdown file into HTML, which is being passed to our template component and rendered using <code class="language-text">dangerouslySetInnerHTML={{ __html: html }}</code>.</p>
 <p>We now have a main page which queries all the markdown files and displays a preview for each one based on the metadata. When we click on the card, it navigates us to the correct blog post. We also have a page being generated for each blog post which we've written.</p>
 <p>Run <code class="language-text">npm run develop</code> to see your site locally and check that you can see a blog preview which links to your new article.</p>
-<h1>Step 7 - Deploy to GitHub Pages</h1>
+<h1>Deploy to GitHub Pages</h1>
 <p>We will be using the <code class="language-text">gh-pages</code> library to help us deploy to GitHub Pages.</p>
 <br>
 <deckgo-highlight-code language="bash" terminal="carbon" theme="material" line-numbers="true"  >
