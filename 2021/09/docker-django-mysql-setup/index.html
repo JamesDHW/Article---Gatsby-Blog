@@ -63,14 +63,14 @@ ping db # ping the db service.</code>
           <code slot="code">ps aux | grep mysql</code>
         </deckgo-highlight-code>
 <br>
-<p>to get any process that's running which contains <code class="language-text">mysql</code> in the name - if you get output, a proccess has been found.</p>
+<p>to get any process that's running which contains <code class="language-text">mysql</code> in the name - if you get output, a process has been found.</p>
 <p>Quit the bash shell for <code class="language-text">web</code> with <code class="language-text">cntrl+d</code>.</p>
 <h2>Checking it works: Run the <code class="language-text">db</code> service</h2>
 <deckgo-highlight-code language="bash" terminal="carbon" theme="material" line-numbers="true"  >
           <code slot="code"># open a bash for the `db` container
 docker-compose exec db bash
 
-# (where `root` is username and `my-app-db` is the databse name)
+# (where `root` is username and `my-app-db` is the database name)
 mysql -u root -p my-app-db </code>
         </deckgo-highlight-code>
 <br>
@@ -144,7 +144,7 @@ services:
         </deckgo-highlight-code>
 <br>
 <h2>Add a <code class="language-text">requirements.txt</code></h2>
-<p>I now actually define what the requierments  for the Django app will be in <code class="language-text">requirements.txt</code>.</p>
+<p>I now actually define what the requirements for the Django app will be in <code class="language-text">requirements.txt</code>.</p>
 <deckgo-highlight-code  terminal="carbon" theme="material" line-numbers="true"  >
           <code slot="code">Django==1.11.5
 mysqlclient==1.3.12
@@ -176,5 +176,5 @@ django-mysql==2.2.0</code>
 }</code>
         </deckgo-highlight-code>
 <br>
-<h1>Sumamry</h1>
+<h1>Summary</h1>
 <p>This should have been a clear step by step how-to on creating a Django app that connects to MySQL. If you want to look at any files more specifically, you can always check the repo <a href="https://github.com/JamesDHW/blog-docker-django-mysql">here</a>. Happy coding!</p></div></div><div class="SiteLayoutstyle__Span-sc-17bo9rt-5 SiteLayoutstyle__Footer-sc-17bo9rt-6 cCEFpP bCEtmV"></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2021/09/docker-django-mysql-setup";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-8b4d9920bb81643e6f25.js"],"app":["/app-d397031ab768a05b2095.js"],"component---src-pages-404-js":["/component---src-pages-404-js-625588f3ba724974f97a.js"],"component---src-pages-index-js":["/component---src-pages-index-js-e41346c5952e433fcbdf.js"],"component---src-templates-blog-post-blog-post-jsx":["/component---src-templates-blog-post-blog-post-jsx-cf647882aae575c41028.js"]};/*]]>*/</script><script src="/blog/polyfill-8b4d9920bb81643e6f25.js" nomodule=""></script><script src="/blog/component---src-templates-blog-post-blog-post-jsx-cf647882aae575c41028.js" async=""></script><script src="/blog/commons-23840ff57cd681842e62.js" async=""></script><script src="/blog/6278397b-fef80d2a20efbbaf73b7.js" async=""></script><script src="/blog/app-d397031ab768a05b2095.js" async=""></script><script src="/blog/framework-8dcaa89ad56a07169b97.js" async=""></script><script src="/blog/webpack-runtime-33091de9b72968e41f7c.js" async=""></script></body></html>
