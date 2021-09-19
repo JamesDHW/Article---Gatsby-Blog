@@ -1,7 +1,13 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Subtitle } from '../../stylesheet'
-import { NavbarGroup, NavbarDivider, Alignment, Icon } from '@blueprintjs/core'
+import {
+  NavbarGroup,
+  NavbarDivider,
+  Alignment,
+  Icon,
+  H3
+} from '@blueprintjs/core'
 import {
   ContentContainer,
   StyledNavbar,
@@ -28,12 +34,17 @@ export const SiteLayout = ({ children }) => {
           </Link>
           <NavbarDivider />
           <BlogTitle href="/blog">
-            <Subtitle>James' Blog 🚀</Subtitle>
+            <H3>Blog ✍️</H3>
           </BlogTitle>
         </NavbarGroup>
 
         <StyledRightNavbarGroup align={Alignment.RIGHT}>
           <NavbarDivider />
+          <Link
+            target="_blank"
+            href="mailto:JamesHaworthWheatman@gmail.com?subject=[GitHub Pages]: ">
+            <Icon size={ICON_HEIGHT} color="white" icon="envelope" />
+          </Link>
           <Link target="_blank" href="https://github.com/JamesDHW">
             <StaticImage
               height={ICON_HEIGHT}

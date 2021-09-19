@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { getSpacing } from '../../stylesheet'
-import { Navbar, NavbarGroup, Colors } from '@blueprintjs/core'
+import { Navbar, NavbarGroup } from '@blueprintjs/core'
 
 export const ContentContainer = styled.div`
   display: flex;
@@ -53,6 +53,7 @@ export const Link = styled.a`
 `
 
 export const BlogTitle = styled.a`
+  margin-top: ${getSpacing(2)} !important;
   :hover {
     text-decoration: none;
   }

@@ -49,7 +49,7 @@ Here's what we're going to do in this article:
 6. Create a template to display the blog post pages.
 7. Deploy our project to GitHub Pages.
 
-# Step 1 - Generate a new Gatsby project
+# Generate a new Gatsby project
 
 To generate a new Gatsby project, run:
 
@@ -78,7 +78,7 @@ git remote add origin <your-remote-repo-url-goes-here>
 Let's configure all the plugins we're going to need and then we'll write some basic components for our site.
 
 
-# Step 2 - Configure Gatsby plugins
+# Configure Gatsby plugins
 
 We're going to install some plugins to use in our project which will add some extra functionality to our Gatsby site:
 
@@ -164,7 +164,7 @@ To render images in your React code, you can use `gatsby-plugin-image`.
 You can find the preview card I made [here](https://github.com/JamesDHW/blog/blob/master/src/components/BlogPreviewCard/BlogPreviewCard.jsx).
 
 
-# Step 3 - Write your first article
+# Write your first article
 
 Create a new file called `src/blog/article-one/index.md` and add the metadata as below:
 
@@ -186,7 +186,7 @@ date: 2021-08-01
 
 You will also need to add in a new file called `src/blog/article-one/thumbnail.png` which will be a thumbnail image for your article.
 
-# Step 4 - Understanding Gatsby and GraphQL
+# Understanding Gatsby and GraphQL
 
 Gatsby allows you to use GraphQL to query site data, however Gatsby abstracts some of the boilerplate away for us, so we need to do our queries in a particular way. We are going to have two main queries on our site: one for our homepage, where we query all the metadata and thumbnails of our articles; and one on our blog post page to get the content of the blog post.
 
@@ -268,7 +268,7 @@ export const query = graphql`
 
 Now Gatsby is querying data from all our `MarkdownRemark`s and passing the information through to the `IndexPage` to show all our blog previews.
 
-# Step 5 - Generating pages from markdown files
+# Generating pages from markdown files
 
 As Gatsby serves static websites, all the pages that we want to generate dynamically get created at build-time. Gatsby will run any script held within the `gatsby-node.js` file on build of the project - this is where we will tell Gatsby to generate our pages.
 
@@ -316,7 +316,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
 
 We'll now go on to create the actual template component for our actual blog post page that we've used to create a page from. 
 
-# Step 6 - Create our blog post template
+# Create our blog post template
 
 This will be very simple as we'll mostly be showing some parsed HTML. Create a `src/templates/BlogPost/BlogPost.jsx` file and create a `BlogPost` component. I've included a snippet below, but you can make this however you like.
 
@@ -358,7 +358,7 @@ We now have a main page which queries all the markdown files and displays a prev
 
 Run `npm run develop` to see your site locally and check that you can see a blog preview which links to your new article.
 
-# Step 7 - Deploy to GitHub Pages
+# Deploy to GitHub Pages
 
 We will be using the `gh-pages` library to help us deploy to GitHub Pages.
 

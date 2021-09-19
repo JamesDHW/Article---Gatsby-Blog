@@ -1,8 +1,7 @@
 @import "~normalize.css";
 @import "~@blueprintjs/core/lib/css/blueprint.css";
 @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
 html {
     background-color: #009fff;
@@ -12,11 +11,20 @@ html {
 
 h1, h2 {
     font-size: xx-large;
-    font-family: 'Shadows Into Light';
+    font-family: 'Work Sans', sans-serif;
 }
 
-p, li, ul {
+h1 {
+    margin-bottom: 30px !important;
+}
+
+div {
     font-size: large;
-    font-family: 'Itim', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+li, ul, p {
+    font-size: x-large;
+    font-family: 'Work Sans', sans-serif;
 }
 
