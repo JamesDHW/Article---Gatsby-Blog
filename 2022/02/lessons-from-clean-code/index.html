@@ -389,7 +389,7 @@ public class PerDiemMealExpenses implements MealExpenses {
 }</code>
         </deckgo-highlight-code>
 <p>Now the client doesn't need to deal with the exceptional behaviour as it is encapsulated in the special case object (this is called the <em>special case pattern</em>).</p>
-<h1>Avoiding null avoids inviting errors</h1>
+<h2>Avoiding null</h2>
 <p>It is a red flag if your code has/ requires <code class="language-text">null</code> checks everywhere. Feathers gives us two rules for this:</p>
 <ol>
 <li>Don't return <code class="language-text">null</code> from any of your functions.</li>
@@ -403,7 +403,10 @@ public class PerDiemMealExpenses implements MealExpenses {
 <p>Not every case of <code class="language-text">Map</code> requires wrapping, but Grenning advises against passing <code class="language-text">Map</code>s (or other interfaces at a boundary) around your system - keep these interfaces encapsulated.</p>
 <p>Grenning proposes that when integrating third-party code, we should use <em>learning tests</em> to assert that the parts of the third party code behave as expected so that when we come to debug our own code, we are certain that this is not a third-party error.</p>
 <p>These learning tests help us to learn about the integration and also support us when we come to migrate to newer versions to ensure that our code remains compatible with the library.</p>
-<!-- ## Code that is yet to exist -->
+<h2>Code that is yet to exist</h2>
+<p>Grenning describes a technique he used for where the API he wished to use had not yet been written. His team wrote an <strong>adapter</strong>, which encapsulated the interaction with the un-finished API, and whenever they ran into some functionality of the interface that they expected to exist, they wrote a method in the adapter for it. This meant that when the third-party API was finished, their system was ready, excpet from creating the interface to the third-party.</p>
+<h2>Clean Boundaries</h2>
+<p>Grenning finishes this section by outlining that the boundaries between different systems are the points which often experience changes. We should isolate the interfaces between external systems so as to contain these maintenance points. We can wrap external code, or use an adapter to create a single point of interface. It is better for our code to speak to systems that we control.</p>
 <h1>Conclusion</h1>
 <p>Ironically, the use of the word "code" to describe a program may itself be unhelpful.</p>
 <p>The essence of <em>Clean Code</em> is in the clear intent to the reader - that is to say that <em>your programs shouldn't be encoded</em> to the human reader!</p></div></div><div class="SiteLayoutstyle__Span-sc-17bo9rt-5 SiteLayoutstyle__Footer-sc-17bo9rt-6 cCEFpP bCEtmV"></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2022/02/lessons-from-clean-code";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-8b4d9920bb81643e6f25.js"],"app":["/app-296df54ead36e162e0cf.js"],"component---src-pages-404-js":["/component---src-pages-404-js-625588f3ba724974f97a.js"],"component---src-pages-index-js":["/component---src-pages-index-js-e41346c5952e433fcbdf.js"],"component---src-templates-blog-post-blog-post-jsx":["/component---src-templates-blog-post-blog-post-jsx-cf647882aae575c41028.js"]};/*]]>*/</script><script src="/blog/polyfill-8b4d9920bb81643e6f25.js" nomodule=""></script><script src="/blog/component---src-templates-blog-post-blog-post-jsx-cf647882aae575c41028.js" async=""></script><script src="/blog/commons-0fd54ff7c6cbb4ec0222.js" async=""></script><script src="/blog/6278397b-fef80d2a20efbbaf73b7.js" async=""></script><script src="/blog/app-296df54ead36e162e0cf.js" async=""></script><script src="/blog/framework-8dcaa89ad56a07169b97.js" async=""></script><script src="/blog/webpack-runtime-e4d98b02fa15d980d85f.js" async=""></script></body></html>
