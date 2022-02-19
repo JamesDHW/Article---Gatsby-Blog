@@ -10,7 +10,6 @@ html {
 }
 
 h1, h2 {
-    font-size: xx-large;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -18,9 +17,21 @@ h1 {
     margin-bottom: 30px !important;
 }
 
+h3 {
+    font-size: x-large;
+}
+
 div {
     font-size: large;
     font-family: 'Work Sans', sans-serif;
+}
+
+code {
+    color: #48AFF0;
+    background-color: #10161A;
+    padding: 1px 5px;
+    border-radius: 5px;
+    font-size: large;
 }
 
 li, ul, p {

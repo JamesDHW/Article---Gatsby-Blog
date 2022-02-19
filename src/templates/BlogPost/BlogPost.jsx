@@ -5,6 +5,9 @@ import { SiteLayout } from '../../components/SiteLayout/SiteLayout'
 import { H1 } from '@blueprintjs/core'
 import { HeaderImg } from './BlogPost.style'
 
+import '../../pages/index.css'
+
+
 const BlogPost = ({
   data: {
     markdownRemark: {
