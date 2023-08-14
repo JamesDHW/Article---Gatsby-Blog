@@ -10,8 +10,7 @@
 
 **Git commits:** *[initial commit](https://github.com/JamesDHW/blog/commit/6f0d6086de8f93626f3060943ba2c4b802913de5) > [configure Gatsby plugins](https://github.com/JamesDHW/blog/commit/9328fb70334b557bb4b64988aa3a226e1f590eba) > [add an article](https://github.com/JamesDHW/blog/commit/b0e02e83779931db52cec7f098f9bb3ce034d46f) > [create components](https://github.com/JamesDHW/blog/commit/af6933b8537615e3397de23fdd463e02932c6f7f)  > [homepage query](https://github.com/JamesDHW/blog/commit/368a335c05a58d3e85c06e0e8839d72924e3bbeb) > [generate pages dynamically](https://github.com/JamesDHW/blog/commit/47a9c95b84cd9a42a6af7f8733050449a4b7b910) > [blog post template](https://github.com/JamesDHW/blog/commit/ab1657d54ef496dc646a80e5d024058eb797f24a) > [add the deployment script](https://github.com/JamesDHW/blog/commit/92adc364fe4d15a1ea04a72eb4faba6b37e5726c).*
 
-**[Example Blog](https://jamesdhw.github.io/blog/)**
-
+**[Example Blog](https://jamesdhw.github.io/Article---Gatsby-Blog/)**
 
 
 ## Introduction
